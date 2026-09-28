@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e4d3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Rizq">
+<title>Increasing Our Rizq</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f3ee;--card:#fff;--text:#1d2621;--mute:#5f6b64;--line:#e3ded2;
+  --green:#0e4d3a;--green-2:#15694f;--gold:#b8923a;--gold-bg:#faf4e4;--check:#15694f;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0c1512;--card:#14201b;--text:#e8ece9;--mute:#9aa8a1;--line:#24332c;
+  --green:#0e4d3a;--green-2:#3fae85;--gold:#d4b064;--gold-bg:#1c2419;--check:#3fae85;}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.55}
+header{background:var(--green);color:#fff;position:relative;overflow:hidden}
+header .pattern{position:absolute;inset:0;opacity:.09;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.2'%3E%3Crect x='14' y='14' width='20' height='20'/%3E%3Crect x='14' y='14' width='20' height='20' transform='rotate(45 24 24)'/%3E%3C/g%3E%3C/svg%3E")}
+.hin{position:relative;max-width:44rem;margin:0 auto;padding:1.75rem 1.25rem 1.25rem}
+.bism{font-family:Amiri,serif;font-size:1.5rem;text-align:center;color:#e9d9a8;margin:0 0 .75rem;direction:rtl}
+h1{margin:0;font-size:1.6rem;font-weight:700}
+.intro{margin:.4rem 0 0;color:#cfe3da;font-size:.95rem}
+.bar{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+.bin{max-width:44rem;margin:0 auto;padding:.75rem 1.25rem;display:flex;align-items:center;gap:.9rem}
+.track{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,var(--green-2),var(--gold));transition:width .3s}
+.cnt{font-weight:600;font-size:.95rem;white-space:nowrap}
+.btn{font:inherit;font-size:.85rem;font-weight:500;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;padding:.4rem .75rem;cursor:pointer}
+.btn:hover{border-color:var(--gold)}
+main{max-width:44rem;margin:0 auto;padding:1.25rem 1.25rem 3rem;display:grid;gap:.85rem}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
+.item.done{border-color:var(--check)}
+.top{display:flex;gap:.9rem;padding:1rem 1.1rem;cursor:pointer;align-items:flex-start}
+.top input{appearance:none;-webkit-appearance:none;flex:none;width:1.6rem;height:1.6rem;margin:.1rem 0 0;border:2px solid var(--gold);border-radius:7px;cursor:pointer;display:grid;place-items:center;background:var(--card)}
+.top input:checked{background:var(--check);border-color:var(--check)}
+.top input:checked::after{content:"";width:.45rem;height:.8rem;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:translateY(-1px) rotate(45deg)}
+.top input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.h{font-weight:600;font-size:1.05rem;margin:0}
+.h small{font-weight:400;color:var(--mute);font-style:italic}
+.done .h{color:var(--mute);text-decoration:line-through;text-decoration-color:var(--check)}
+.q{margin:.3rem 0 0;color:var(--mute);font-size:.93rem}
+.src{font-size:.82rem;font-weight:500;color:var(--gold)}
+.src a{color:inherit}
+details{border-top:1px dashed var(--line);background:var(--gold-bg)}
+summary{list-style:none;cursor:pointer;padding:.65rem 1.1rem;font-size:.88rem;font-weight:600;color:var(--green-2);display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.1rem;line-height:1}
+details[open] summary::after{content:"–"}
+.dz{padding:0 1.1rem 1rem}
+.ar{font-family:Amiri,"Noto Naskh Arabic","Geeza Pro",serif;font-size:1.55rem;line-height:2;direction:rtl;text-align:right;margin:0 0 .4rem}
+.tr{font-style:italic;margin:0 0 .25rem;font-size:.93rem}
+.m{margin:0 0 .35rem;color:var(--mute);font-size:.9rem}
+
+.ctr{display:flex;align-items:center;gap:1rem;margin-top:.8rem;padding-top:.8rem;border-top:1px solid var(--line)}
+.tap{flex:none;width:96px;height:96px;border-radius:50%;border:none;cursor:pointer;background:conic-gradient(var(--green-2) calc(var(--p)*1%),var(--line) 0);display:grid;place-items:center;padding:0;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.tap span{width:80px;height:80px;border-radius:50%;background:var(--card);display:grid;place-items:center;font:700 1.35rem/1 Inter,system-ui,sans-serif;color:var(--text)}
+.tap small{display:block;font-size:.7rem;font-weight:500;color:var(--mute)}
+.tap:active span{transform:scale(.95)}
+.tap.full span{background:var(--green-2);color:#fff}.tap.full small{color:#e6f2ec}
+.tap:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.cside{flex:1;min-width:0;font-size:.85rem;color:var(--mute)}
+.goal{display:flex;align-items:center;gap:.4rem;margin-bottom:.35rem;color:var(--text);font-weight:500}
+.goal .btn{padding:.15rem .6rem;font-size:1rem;line-height:1.2}
+.goal b{min-width:2.2rem;text-align:center}
+footer{max-width:44rem;margin:0 auto;padding:0 1.25rem 2.5rem;color:var(--mute);font-size:.82rem;text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="pattern"></div><div class="hin">
+  <p class="bism">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+  <h1>Increasing our rizq</h1>
+  <p class="intro">Provision is appointed, yet it may be increased by our actions, with the permission of God. A daily checklist, with a dhikr or du'a for each.</p>
+</div></header>
+<div class="bar"><div class="bin">
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <span class="cnt" id="cnt">0 / 11</span>
+  <button class="btn" id="reset" type="button">Reset</button>
+</div></div>
+<main id="list"></main>
+<footer><span id="date"></span> · Checks reset each day and stay on this device.<br>Ways summarized from Sheikh Rātib al-Nabulsī, Sheikh Māhir Muqaddim and Sheikh Ṣafwān Ḥanūf.</footer>
+<script>
+const Q=n=>"https://quran.com/"+n, S=n=>"https://sunnah.com/"+n;
+const items=[
+ {t:"God-consciousness",sub:"taqwā",q:"And whoever has taqwa of Allah – He will make for him a way out. And will provide for him from where he does not expect.",s:"Qur'an 65:2–3",u:Q("65/2-3"),
+  d:{a:"اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",tr:"Allāhumma innī asʾalukal-hudā wat-tuqā wal-ʿafāfa wal-ghinā",m:"O Allah, I ask You for guidance, God-consciousness, chastity, and self-sufficiency.",s:"Muslim 2721",u:S("muslim:2721")}},
+ {t:"Reliance on God",sub:"tawakkul",q:"And whoever relies upon Allah – then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a [decreed] extent.",s:"Qur'an 65:3",u:Q("65/3"),
+  d:{a:"حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",tr:"Ḥasbiyallāhu lā ilāha illā huwa, ʿalayhi tawakkaltu wa huwa Rabbul-ʿarshil-ʿaẓīm",m:"Allah is sufficient for me; there is no god but Him. In Him I have put my trust, and He is Lord of the Mighty Throne.",s:"Qur'an 9:129",u:Q("9/129")}},
+ {t:"Prayer",q:"And enjoin prayer upon your family [and people] and be steadfast therein. We ask you not for provision; We provide for you, and the [best] outcome is for [those of] righteousness.",s:"Qur'an 20:132",u:Q("20/132"),
+  d:{a:"رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",tr:"Rabbij-ʿalnī muqīmaṣ-ṣalāti wa min dhurriyyatī, Rabbanā wa taqabbal duʿāʾ",m:"My Lord, make me an establisher of prayer, and from my descendants. Our Lord, accept my supplication.",s:"Qur'an 14:40",u:Q("14/40")}},
+ {t:"Faith and good deeds",q:"And those who have believed and done righteous deeds – for them is forgiveness and noble provision.",s:"Qur'an 22:50",u:Q("22/50"),
+  d:{a:"يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",tr:"Yā Muqallibal-qulūb, thabbit qalbī ʿalā dīnik",m:"O Turner of hearts, keep my heart firm upon Your religion.",s:"Tirmidhī 2140",u:S("tirmidhi:2140")}},
+ {t:"Helping others",q:"Seek out the vulnerable among you. Verily, you are only given provision and support due to your support of the weak.",s:"Tirmidhī",
+  d:{a:"اللَّهُمَّ إِنِّي أَسْأَلُكَ فِعْلَ الْخَيْرَاتِ وَتَرْكَ الْمُنْكَرَاتِ وَحُبَّ الْمَسَاكِينِ",tr:"Allāhumma innī asʾaluka fiʿlal-khayrāt, wa tarkal-munkarāt, wa ḥubbal-masākīn",m:"O Allah, I ask You for doing good, leaving what is wrong, and love of the poor.",s:"Tirmidhī 3235",u:S("tirmidhi:3235")}},
+ {t:"Keeping family ties",q:"Whoever would like his rizq to be increased and his life to be extended, should uphold the ties of kinship.",s:"Bukhārī",
+  d:{a:"رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",tr:"Rabbanā hab lanā min azwājinā wa dhurriyyātinā qurrata aʿyun, wajʿalnā lil-muttaqīna imāmā",m:"Our Lord, grant us from our spouses and offspring comfort to our eyes, and make us an example for the righteous.",s:"Qur'an 25:74",u:Q("25/74")}},
+ {t:"Thankfulness",q:"If you are grateful, I will surely increase you [in favor]; but if you deny, indeed, My punishment is severe.",s:"Qur'an 14:7",u:Q("14/7"),
+  d:{a:"اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",tr:"Allāhumma aʿinnī ʿalā dhikrika wa shukrika wa ḥusni ʿibādatik",m:"O Allah, help me to remember You, thank You, and worship You well. Said after each prayer.",s:"Abū Dāwūd 1522",u:S("abudawud:1522"),n:5,note:"Sourced: once after each prayer, so five a day."}},
+ {t:"Istighfar and repentance",sub:"tawbah",q:"Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver. He will send [rain from] the sky upon you in [continuing] showers, and give you increase in wealth and children…",s:"Qur'an 71:10–12",u:Q("71/10-12"),
+  d:{a:"أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ",tr:"Astaghfirullāha wa atūbu ilayh",m:"I seek Allah's forgiveness and turn to Him in repentance. The Prophet ﷺ said it more than seventy times a day.",s:"Bukhārī 6307",u:S("bukhari:6307"),n:70,note:"Sourced: “more than seventy times a day” (Bukhārī 6307). Muslim 2702 mentions a hundred."}},
+ {t:"Charity",q:"Who is it that would loan Allah a goodly loan so He may multiply it for him many times over?",s:"Qur'an 2:245",u:Q("2/245"),
+  d:{a:"رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",tr:"Rabbanā taqabbal minnā, innaka antas-Samīʿul-ʿAlīm",m:"Our Lord, accept from us. You are the All-Hearing, the All-Knowing.",s:"Qur'an 2:127",u:Q("2/127")}},
+ {t:"Reciting Qur'an",q:"The house in which Qur'an is recited is increased in good, and the house in which Qur'an is not recited is decreased in good.",s:"al-Bazzār",
+  d:{a:"رَّبِّ زِدْنِي عِلْمًا",tr:"Rabbi zidnī ʿilmā",m:"My Lord, increase me in knowledge.",s:"Qur'an 20:114",u:Q("20/114")}},
+ {t:"Migrating for the sake of God",q:"And whoever emigrates for the cause of Allah will find on the earth many [alternative] locations and abundance.",s:"Qur'an 4:100",u:Q("4/100"),
+  d:{a:"رَّبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَل لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا",tr:"Rabbi adkhilnī mudkhala ṣidqin wa akhrijnī mukhraja ṣidqin wajʿal lī min ladunka sulṭānan naṣīrā",m:"My Lord, cause me to enter a sound entrance and to exit a sound exit, and grant me from Yourself a supporting authority.",s:"Qur'an 17:80",u:Q("17/80")}}
+];
+const N=items.length, KEY="rizq-v2-"+new Date().toLocaleDateString("en-CA");
+let done=[];try{done=JSON.parse(localStorage.getItem(KEY))||[]}catch(e){}
+try{Object.keys(localStorage).filter(k=>k.startsWith("rizq-v2-")&&k!==KEY&&k!==KEY+"-counts").forEach(k=>localStorage.removeItem(k))}catch(e){}
+const link=(s,u)=>u?`<a href="${u}" target="_blank" rel="noopener">${s}</a>`:s;
+document.getElementById("list").innerHTML=items.map((it,i)=>`
+<article class="item" id="it${i}">
+ <label class="top"><input type="checkbox" data-i="${i}" aria-label="${it.t}">
+  <div><p class="h">${it.t}${it.sub?` <small>(${it.sub})</small>`:""}</p>
+  <p class="q">“${it.q}”</p><span class="src">${link(it.s,it.u)}</span></div></label>
+ <details><summary>Dhikr / du'a</summary><div class="dz">
+  <p class="ar" lang="ar">${it.d.a}</p><p class="tr">${it.d.tr}</p><p class="m">${it.d.m}</p>
+  <span class="src">${link(it.d.s,it.d.u)}</span>
+  <div class="ctr"><button class="tap" type="button" data-c="${i}" aria-label="Count ${it.t} dhikr"><span id="cv${i}"></span></button>
+  <div class="cside"><div class="goal">Goal <button class="btn" type="button" data-g="${i}" data-d="-1" aria-label="Lower goal">−</button><b id="gv${i}"></b><button class="btn" type="button" data-g="${i}" data-d="1" aria-label="Raise goal">+</button></div>
+  <div>${it.d.note||"No set number in the sources. Pick a goal that works for you."}</div>
+  <button class="btn" type="button" data-z="${i}" style="margin-top:.4rem">Reset count</button></div></div></div></details>
+</article>`).join("");
+const TK="rizq-targets", CK=KEY+"-counts";
+let targets={},counts={};
+try{targets=JSON.parse(localStorage.getItem(TK))||{}}catch(e){}
+try{counts=JSON.parse(localStorage.getItem(CK))||{}}catch(e){}
+const tgt=i=>targets[i]??items[i].d.n??1;
+function drawC(i){const c=counts[i]||0,t=tgt(i),b=document.querySelector(`[data-c="${i}"]`);
+  b.style.setProperty("--p",Math.min(100,c/t*100));b.classList.toggle("full",c>=t);
+  document.getElementById("cv"+i).innerHTML=`${c}<small>of ${t}</small>`;document.getElementById("gv"+i).textContent=t;}
+function saveC(){try{localStorage.setItem(CK,JSON.stringify(counts));localStorage.setItem(TK,JSON.stringify(targets))}catch(e){}}
+document.getElementById("list").addEventListener("click",e=>{
+  const c=e.target.closest("[data-c]"),g=e.target.closest("[data-g]"),z=e.target.closest("[data-z]");
+  if(c){const i=+c.dataset.c;counts[i]=(counts[i]||0)+1;
+    if(counts[i]===tgt(i)){navigator.vibrate&&navigator.vibrate([60,40,120]);if(!done.includes(i)){done.push(i);render()}}
+    else navigator.vibrate&&navigator.vibrate(12);
+    drawC(i);saveC();}
+  if(g){const i=+g.dataset.g;targets[i]=Math.max(1,tgt(i)+(+g.dataset.d));drawC(i);saveC();}
+  if(z){const i=+z.dataset.z;counts[i]=0;drawC(i);saveC();}
+});
+items.forEach((_,i)=>drawC(i));
+function render(){
+  document.querySelectorAll("input[data-i]").forEach(c=>{const i=+c.dataset.i;c.checked=done.includes(i);document.getElementById("it"+i).classList.toggle("done",c.checked)});
+  document.getElementById("fill").style.width=(done.length/N*100)+"%";
+  document.getElementById("cnt").textContent=done.length===N?"All done · alhamdulillah":`${done.length} / ${N}`;
+  try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}
+}
+document.getElementById("list").addEventListener("change",e=>{const i=+e.target.dataset.i;if(isNaN(i))return;done=e.target.checked?[...new Set([...done,i])]:done.filter(x=>x!==i);render()});
+document.getElementById("reset").onclick=()=>{done=[];counts={};items.forEach((_,i)=>drawC(i));saveC();render()};
+document.getElementById("date").textContent=new Date().toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"});
+render();
+</script>
+</body>
+</html>
